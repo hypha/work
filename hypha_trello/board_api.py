@@ -1,11 +1,13 @@
 from trello import TrelloClient
-
+from config import *
 
 class Board:
 
     def __init__(self):
-        API = "9cc1470c039f9f1bf8fe3ce35689a127"
-        TOKEN = "2093b976115e83e07b33321b359aa53a74d612aeec6373218d15796bd78a45b1"
+        # API = "9cc1470c039f9f1bf8fe3ce35689a127"
+        # TOKEN = "2093b976115e83e07b33321b359aa53a74d612aeec6373218d15796bd78a45b1"
+        API = get_credentials()["api"]
+        TOKEN = get_credentials()["token"]
         client = TrelloClient(api_key=API,
                               token=TOKEN)
         self.boards = client.list_boards()
