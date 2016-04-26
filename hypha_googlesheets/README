@@ -1,0 +1,10 @@
+Install requirements:
+apt-get install libffi-dev
+apt-get install libssl-dev
+pip install PyOpenSSL
+pip install gspread
+
+Get credentials first
+
+1. update_cell can add a new cell to the first empty line
+2. get coded jobs, get work from latest week by ID, get duration per customer, get duration per customer per week
